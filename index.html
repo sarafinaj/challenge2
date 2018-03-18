@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Challenge 2 van Sarafina</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" href="styles/challenge2.css" rel="stylesheet" />
+
 	</head>
 	<body>
 		<div class="clock">
 			<div class="langewijzer">
 				<div class="clockcirkelgroot"></div>
-				<div class="wijzergroot wijzer"></div>
+				<div id="minuut" class="wijzergroot wijzer"></div>
 				<div class="centercirkel"></div>
 				<div class="kwartstreepgroot kwartstreep 12"></div>
 				<div class="kwartstreepgroot kwartstreep 3"></div>
@@ -18,7 +20,7 @@
 			</div>
 			<div class="kortewijzer">
 				<div class="clockcirkelklein"></div>
-				<div class="wijzergroot wijzer"></div>
+				<div id="uur" class="wijzerklein wijzer"></div>
 				<div class="centercirkel"></div>
 				<div class="kwartstreepklein kwartstreep 12"></div>
 				<div class="kwartstreepklein kwartstreep 3"></div>
@@ -26,5 +28,7 @@
 				<div class="kwartstreepklein kwartstreep 9"></div>
 			</div>
 		</div>
+		<script src="scripts/TweenMax.min.js"></script>
+		<script type="text/javascript" src="scripts/challenge2.js"></script>
 	</body>
 </html>

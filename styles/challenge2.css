@@ -4,7 +4,36 @@
 }
 
 /*---KLOK---*/
+.clock{
+	width: 68%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
 
+.clockcirkelgroot{
+	position: relative;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: green;
+}
+
+.clockcirkelklein{
+	position: relative;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: yellow;
+}
+
+.wijzer{
+	border-color: orange;
+	background-color: orange;
+	border-radius: 50%;
+	border-style: solid;
+	position: absolute;
+}
 
 /*---OPMAAK SCHERMEN---*/
 
@@ -13,12 +42,136 @@
 	body{
 		background-color: pink;
 	}
+
+	@keyframes wijzergroot{
+		from{
+			transform: rotate(0deg)
+			           translate(-130px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-130px) 
+			           rotate(-360deg);
+		}
+	}
+
+	@keyframes wijzerklein{
+		from{
+			transform: rotate(0deg)
+			           translate(-98px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-98px) 
+			           rotate(-360deg);
+		}
+	}
+
+	.clock{
+		top: 100px;
+		left: 15%;
+	}
+
+	.clockcirkelgroot{
+		width: 260px;
+		height: 260px;
+	}
+
+	.clockcirkelklein{
+		width: 190px;
+		height: 190px;
+		top: -57px;
+		left: 31px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	.wijzergroot{
+		top: 110px;
+		left: 110px;
+		animation: wijzergroot 100s infinite linear;
+		transform: rotate(360deg);
+	}
+
+	.wijzerklein{
+		top: 282px;
+		left: 107px;
+		animation: wijzerklein 100s infinite linear;
+		transform: rotate(360deg);
+	}
 }
 
 /*---TABLET---*/
 @media only screen and (min-width: 415px) and (max-width: 1024px){
 	body{
 		background-color: purple;
+	}
+
+	@keyframes wijzergroot{
+		from{
+			transform: rotate(0deg)
+			           translate(-204px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-204px) 
+			           rotate(-360deg);
+		}
+	}
+
+	@keyframes wijzerklein{
+		from{
+			transform: rotate(0deg)
+			           translate(-145px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-145px) 
+			           rotate(-360deg);
+		}
+	}
+
+	.clock{
+		top: 100px;
+		left: 25%;
+	}
+
+	.clockcirkelgroot{
+		width: 400px;
+		height: 400px;
+	}
+
+	.clockcirkelklein{
+		width: 300px;
+		height: 300px;
+		top: -57px;
+		left: 50px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	.wijzergroot{
+		top: 179px;
+		left: 181px;
+		animation: wijzergroot 10s infinite linear;
+		transform: rotate(360deg);
+	}
+
+	.wijzerklein{
+		top: 482px;
+		left: 180px;
+		animation: wijzerklein 10s infinite linear;
+		transform: rotate(360deg);
 	}
 }
 
@@ -27,6 +180,69 @@
 	body{
 		background-color: indigo;
 	}
+
+	@keyframes wijzergroot{
+		from{
+			transform: rotate(0deg)
+			           translate(-204px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-204px) 
+			           rotate(-360deg);
+		}
+	}
+
+	@keyframes wijzerklein{
+		from{
+			transform: rotate(0deg)
+			           translate(-148px)
+			           rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg)
+			           translate(-148px) 
+			           rotate(-360deg);
+		}
+	}
+
+	.clock{
+		top: 100px;
+		left: 35%;
+	}
+
+	.clockcirkelgroot{
+		width: 400px;
+		height: 400px;
+	}
+
+	.clockcirkelklein{
+		width: 300px;
+		height: 300px;
+		top: -57px;
+		left: 50px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	.wijzergroot{
+		top: 179px;
+		left: 181px;
+		animation: wijzergroot 10s infinite linear;
+		transform: rotate(360deg);
+	}
+
+	.wijzerklein{
+		top: 482px;
+		left: 180px;
+		animation: wijzerklein 10s infinite linear;
+		transform: rotate(360deg);
+	}
+
 }
 
 /*---GROTE DESKTOP---*/
