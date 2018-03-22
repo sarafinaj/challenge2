@@ -448,7 +448,7 @@ body{
 }
 
 /*---GROTE DESKTOP---*/
-@media only screen and (min-width: 2281px) and (max-width: 2260px){
+@media only screen and (min-width: 2281px) and (max-width: 2560px){
 	body{
 		background-color: #FFFFAC;
 	}
