@@ -122,12 +122,12 @@ body{
 
 	.text:nth-child(2){
 		position: relative;
-		left: 90px;
+		left: 23%;
 	}
 
 	.text:nth-child(1){
 		position: relative;
-		left: 100px;
+		left: 25%;
 		top: 670px;
 	}
 
@@ -172,7 +172,7 @@ body{
 	}*/
 
 	.clock{
-		top: 100px;
+		top: 80px;
 		left: 15%;
 	}
 
@@ -216,14 +216,14 @@ body{
 
 	.text:nth-child(2){
 		position: relative;
-		left: 135px;
+		left: 25%;
 		top: -10px;
 	}
 
 	.text:nth-child(1){
 		position: relative;
-		left: 140px;
-		top: 580px;
+		left: 25%;
+		top: 690px;
 	}
 
 	/*@keyframes wijzergroot{
@@ -291,8 +291,8 @@ body{
 	}*/
 
 	.clock{
-		top: 10px;
-		left: 16%;
+		top: 80px;
+		left: 24%;
 	}
 
 	.clockcirkelgroot{
@@ -337,12 +337,12 @@ body{
 
 	.text:nth-child(2){
 		position: relative;
-		left: 540px;
+		left: 37%;
 	}
 
 	.text:nth-child(1){
 		position: relative;
-		left: 560px;
+		left: 38%;
 		top: 680px;
 	}
 
