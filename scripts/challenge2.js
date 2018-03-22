@@ -141,9 +141,9 @@ tl.to("#mainbackground", 60,{backgroundPosition: "0px -8192px", ease: Linear.eas
 // var tl = new TimelineMax({repeat:0});
 // tl.to(minuut, 1, {top:200, left:880});
 
-TweenMax.to("#minuut", 90, {rotation:360, transformOrigin:"30px 150px", repeat:-1, ease:Linear.easeNone}); // animatie van de grote wijzer
+TweenMax.to("#minuut", {rotation:360, transformOrigin:"30px 150px", repeat:-1, ease:Linear.easeNone}); // animatie van de grote wijzer
 
-TweenMax.to("#uur", 50, {rotation:360, transformOrigin:"20px 115px", repeat:-1, ease:Linear.easeNone}); // animatie van de kleine wijzer
+TweenMax.to("#uur", {rotation:360, transformOrigin:"20px 115px", repeat:-1, ease:Linear.easeNone}); // animatie van de kleine wijzer
 
 // Tweenmax.to("#zon", 20, {rotation:180, transformOrigin:"20px 115px", repeat:0, ease:Linear.easeNone});
 
