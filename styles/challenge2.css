@@ -128,7 +128,7 @@ body{
 	.text:nth-child(1){
 		position: relative;
 		left: 25%;
-		top: 670px;
+		top: 570px;
 	}
 
 	/*@keyframes wijzergroot{
@@ -172,7 +172,7 @@ body{
 	}*/
 
 	.clock{
-		top: 80px;
+		top: 30px;
 		left: 15%;
 	}
 
