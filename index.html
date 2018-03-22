@@ -7,28 +7,52 @@
 		<link type="text/css" href="styles/challenge2.css" rel="stylesheet" />
 
 	</head>
-	<body>
-		<div class="clock">
-			<div class="langewijzer">
-				<div class="clockcirkelgroot"></div>
-				<div id="minuut" class="wijzergroot wijzer"></div>
-				<div class="centercirkel"></div>
-				<div class="kwartstreepgroot kwartstreep 12"></div>
-				<div class="kwartstreepgroot kwartstreep 3"></div>
-				<div class="kwartstreepgroot kwartstreep 6"></div>
-				<div class="kwartstreepgroot kwartstreep 9"></div>
+	<body class="background">
+		<div id="mainbackground">
+			<div class="clock" id="scaleclock">
+				<div class="langewijzer">
+					<div class="clockcirkelgroot" id="cirkelgroot"></div>
+					<div id="minuut" class="wijzergroot wijzer"></div>
+					<div class="centercirkel"></div>
+					<div class="kwartstreepgroot kwartstreep 12"></div>
+					<div class="kwartstreepgroot kwartstreep 3"></div>
+					<div class="kwartstreepgroot kwartstreep 6"></div>
+					<div class="kwartstreepgroot kwartstreep 9"></div>
+				</div>
+				<div class="kortewijzer">
+					<div class="clockcirkelklein" id="cirkelklein"></div>
+					<div id="uur" class="wijzerklein wijzer"></div>
+					<div class="centercirkel"></div>
+					<div class="kwartstreepklein kwartstreep 12"></div>
+					<div class="kwartstreepklein kwartstreep 3"></div>
+					<div class="kwartstreepklein kwartstreep 6"></div>
+					<div class="kwartstreepklein kwartstreep 9"></div>
+				</div>
 			</div>
-			<div class="kortewijzer">
-				<div class="clockcirkelklein"></div>
-				<div id="uur" class="wijzerklein wijzer"></div>
-				<div class="centercirkel"></div>
-				<div class="kwartstreepklein kwartstreep 12"></div>
-				<div class="kwartstreepklein kwartstreep 3"></div>
-				<div class="kwartstreepklein kwartstreep 6"></div>
-				<div class="kwartstreepklein kwartstreep 9"></div>
+			<div id="zon">
+				<figure>
+					<img src="images/zon.svg" alt="de zon" />
+				</figure>
 			</div>
-		</div>
-		<script src="scripts/TweenMax.min.js"></script>
+			<div id="sterren">
+				<div id="sterrenklein">
+					<figure>
+					
+					</figure>
+				</div>
+				<div id="sterrengroot">
+					<figure>
+						
+					</figure>
+				</div>
+				<div>
+					<figure id="maan">
+						<img src="images/maan.svg" alt="de maan">
+					</figure>
+				</div>
+			</div>
+		</div>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 		<script type="text/javascript" src="scripts/challenge2.js"></script>
 	</body>
 </html>

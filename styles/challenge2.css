@@ -3,6 +3,34 @@
 	padding: 0;
 }
 
+.background {
+
+}
+
+/*.backup {*/
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0d3e0+0,ffffac+100 */
+/*background: #a0d3e0; *//* Old browsers */
+/*background: -moz-linear-gradient(top, #a0d3e0 0%, #ffffac 100%);*/ /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, #a0d3e0 0%,#ffffac 100%); *//* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, #a0d3e0 0%,#ffffac 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0d3e0', endColorstr='#ffffac',GradientType=0 );*/ /* IE6-9 */
+/*}*/
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#mainbackground{
+	background: url("../images/mainbackground.svg") repeat 0 0 transparent;
+	width: 100%;
+	height: 8192px;
+	background-size: cover;
+	position: relative;
+}
+
 /*---KLOK---*/
 .clock{
 	width: 68%;
@@ -35,15 +63,48 @@
 	position: absolute;
 }
 
+/*---DAG---*/
+	#zon > figure > img{
+		position: absolute;
+	}
+
+#sterren {
+	position: absolute;
+	top:0px;
+}
+/*---NACHT---*/
+#sterrenklein{
+	position: relative;
+}
+
+#sterrenklein{
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+
+#sterrengroot{
+	position: relative;
+	height: 10px;
+	width: 10px;
+}
+
+#maan{
+	position: relative;
+	width: 130px;
+	height: 130px;
+}
+
 /*---OPMAAK SCHERMEN---*/
 
 /*---MOBILE---*/
 @media only screen and (min-width: 360px) and (max-width: 414px){
-	body{
-		background-color: pink;
+
+	.background{
+		height: 300%;
 	}
 
-	@keyframes wijzergroot{
+	/*@keyframes wijzergroot{
 		from{
 			transform: rotate(0deg)
 			           translate(-130px)
@@ -68,9 +129,23 @@
 			           rotate(-360deg);
 		}
 	}
+*/
+/*.wijzergroot{
+		top: 110px;
+		left: 110px;
+		animation: wijzergroot 100s infinite linear;
+		transform: rotate(360deg);
+	}
+
+	.wijzerklein{
+		top: 282px;
+		left: 107px;
+		animation: wijzerklein 100s infinite linear;
+		transform: rotate(360deg);
+	}*/
 
 	.clock{
-		top: 100px;
+		top: 200px;
 		left: 15%;
 	}
 
@@ -91,28 +166,24 @@
 		height: 40px;
 	}
 
-	.wijzergroot{
-		top: 110px;
-		left: 110px;
-		animation: wijzergroot 100s infinite linear;
-		transform: rotate(360deg);
+	#minuut{
+		top: -20px;
+		left: 106px;
 	}
 
-	.wijzerklein{
-		top: 282px;
-		left: 107px;
-		animation: wijzerklein 100s infinite linear;
-		transform: rotate(360deg);
+	#uur{
+		top: 190px;
+		left: 108px;
 	}
 }
 
 /*---TABLET---*/
 @media only screen and (min-width: 415px) and (max-width: 1024px){
 	body{
-		background-color: purple;
+		background-color: #FFFFAC;
 	}
 
-	@keyframes wijzergroot{
+	/*@keyframes wijzergroot{
 		from{
 			transform: rotate(0deg)
 			           translate(-204px)
@@ -136,9 +207,11 @@
 			           translate(-145px) 
 			           rotate(-360deg);
 		}
-	}
+	}*/
 
-	.clock{
+	/*---KLOK---*/
+
+	/*.clock{
 		top: 100px;
 		left: 25%;
 	}
@@ -172,16 +245,50 @@
 		left: 180px;
 		animation: wijzerklein 10s infinite linear;
 		transform: rotate(360deg);
+	}*/
+
+	.clock{
+		top: 290px;
+		left: 31%;
 	}
+
+	.clockcirkelgroot{
+		width: 260px;
+		height: 260px;
+	}
+
+	.clockcirkelklein{
+		width: 190px;
+		height: 190px;
+		top: -57px;
+		left: 31px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	#minuut{
+		top: -20px;
+		left: 106px;
+	}
+
+	#uur{
+		top: 190px;
+		left: 108px;
+	}
+
+
 }
 
 /*---KLEINE DESKTOP---*/
 @media only screen and (min-width: 1025px) and (max-width: 2280px){
 	body{
-		background-color: indigo;
+		background-color: #FFFFAC;
 	}
 
-	@keyframes wijzergroot{
+	/*@keyframes wijzergroot{
 		from{
 			transform: rotate(0deg)
 			           translate(-204px)
@@ -205,9 +312,14 @@
 			           translate(-148px) 
 			           rotate(-360deg);
 		}
-	}
+	}*/
 
-	.clock{
+	/*#minuut{
+		top: -20px;
+	}*/
+
+	/*---KLOK---*/
+	/*.clock{
 		top: 100px;
 		left: 35%;
 	}
@@ -241,6 +353,38 @@
 		left: 180px;
 		animation: wijzerklein 10s infinite linear;
 		transform: rotate(360deg);
+	}*/
+
+	.clock{
+		top: 230px;
+		left: 40%;
+	}
+
+	.clockcirkelgroot{
+		width: 260px;
+		height: 260px;
+	}
+
+	.clockcirkelklein{
+		width: 190px;
+		height: 190px;
+		top: -57px;
+		left: 31px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	#minuut{
+		top: -20px;
+		left: 106px;
+	}
+
+	#uur{
+		top: 190px;
+		left: 108px;
 	}
 
 }
@@ -248,6 +392,39 @@
 /*---GROTE DESKTOP---*/
 @media only screen and (min-width: 2281px) and (max-width: 2260px){
 	body{
-		background-color: grey;
+		background-color: #FFFFAC;
+	}
+
+	/*---KLOK---*/
+	.clock{
+		top: 200px;
+		left: 41%;
+	}
+
+	.clockcirkelgroot{
+		width: 260px;
+		height: 260px;
+	}
+
+	.clockcirkelklein{
+		width: 190px;
+		height: 190px;
+		top: -57px;
+		left: 31px;
+	}
+
+	.wijzer{
+		width: 40px;
+		height: 40px;
+	}
+
+	#minuut{
+		top: -20px;
+		left: 106px;
+	}
+
+	#uur{
+		top: 190px;
+		left: 108px;
 	}
 }
