@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 *{
 	margin: 0;
 	padding: 0;
-}
-
-.background {
-
 }
 
 /*.backup {*/
@@ -31,6 +29,15 @@ body{
 	position: relative;
 }
 
+.text{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+}
+
+#maan{
+	opacity: 0.2;
+}
+
 /*---KLOK---*/
 .clock{
 	width: 68%;
@@ -45,28 +52,33 @@ body{
 	position: relative;
 	border-radius: 50%;
 	border-style: solid;
-	border-color: green;
+	border-color: #ffffff;
 }
 
 .clockcirkelklein{
 	position: relative;
 	border-radius: 50%;
 	border-style: solid;
-	border-color: yellow;
+	border-color: #949494;
 }
 
 .wijzer{
-	border-color: orange;
-	background-color: orange;
+	border-color: #ffffff;
+	background-color: #ffffff;
 	border-radius: 50%;
 	border-style: solid;
 	position: absolute;
 }
 
+.wijzergroot{
+	border-color: #bfbfbf;
+	background-color: #bfbfbf;
+}
+
 /*---DAG---*/
-	#zon > figure > img{
-		position: absolute;
-	}
+#zon > figure > img{
+	position: absolute;
+}
 
 #sterren {
 	position: absolute;
@@ -102,6 +114,21 @@ body{
 
 	.background{
 		height: 300%;
+	}
+
+	.text{
+	font-size: 2.8em;
+	}
+
+	.text:nth-child(2){
+		position: relative;
+		left: 90px;
+	}
+
+	.text:nth-child(1){
+		position: relative;
+		left: 100px;
+		top: 670px;
 	}
 
 	/*@keyframes wijzergroot{
@@ -145,7 +172,7 @@ body{
 	}*/
 
 	.clock{
-		top: 200px;
+		top: 100px;
 		left: 15%;
 	}
 
@@ -181,6 +208,22 @@ body{
 @media only screen and (min-width: 415px) and (max-width: 1024px){
 	body{
 		background-color: #FFFFAC;
+	}
+
+	.text{
+	font-size: 3.5em;
+	}
+
+	.text:nth-child(2){
+		position: relative;
+		left: 135px;
+		top: -10px;
+	}
+
+	.text:nth-child(1){
+		position: relative;
+		left: 140px;
+		top: 580px;
 	}
 
 	/*@keyframes wijzergroot{
@@ -248,8 +291,8 @@ body{
 	}*/
 
 	.clock{
-		top: 290px;
-		left: 31%;
+		top: 10px;
+		left: 16%;
 	}
 
 	.clockcirkelgroot{
@@ -286,6 +329,21 @@ body{
 @media only screen and (min-width: 1025px) and (max-width: 2280px){
 	body{
 		background-color: #FFFFAC;
+	}
+
+	.text{
+	font-size: 5em;
+	}
+
+	.text:nth-child(2){
+		position: relative;
+		left: 540px;
+	}
+
+	.text:nth-child(1){
+		position: relative;
+		left: 560px;
+		top: 680px;
 	}
 
 	/*@keyframes wijzergroot{
@@ -356,7 +414,7 @@ body{
 	}*/
 
 	.clock{
-		top: 230px;
+		top: 60px;
 		left: 40%;
 	}
 
@@ -393,6 +451,21 @@ body{
 @media only screen and (min-width: 2281px) and (max-width: 2260px){
 	body{
 		background-color: #FFFFAC;
+	}
+
+	.text{
+	font-size: 5em;
+	}
+
+	.text:nth-child(2){
+		position: relative;
+		left: 540px;
+	}
+
+	.text:nth-child(1){
+		position: relative;
+		left: 560px;
+		top: 700px;
 	}
 
 	/*---KLOK---*/

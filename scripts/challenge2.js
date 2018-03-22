@@ -141,11 +141,9 @@ tl.to("#mainbackground", 60,{backgroundPosition: "0px -8192px", ease: Linear.eas
 // var tl = new TimelineMax({repeat:0});
 // tl.to(minuut, 1, {top:200, left:880});
 
-TweenMax.to("#minuut", {rotation:360, transformOrigin:"30px 150px", repeat:-1, ease:Linear.easeNone}); // animatie van de grote wijzer
+TweenMax.to("#minuut", 100, {rotation:360, transformOrigin:"30px 150px", repeat:-1, ease:Linear.easeNone}); // animatie van de grote wijzer
 
-TweenMax.to("#uur", {rotation:360, transformOrigin:"20px 115px", repeat:-1, ease:Linear.easeNone}); // animatie van de kleine wijzer
-
-// Tweenmax.to("#zon", 20, {rotation:180, transformOrigin:"20px 115px", repeat:0, ease:Linear.easeNone});
+TweenMax.to("#uur", 40, {rotation:360, transformOrigin:"20px 115px", repeat:-1, ease:Linear.easeNone}); // animatie van de kleine wijzer
 
 
 // var mainHeading = document.getElementById('#scaleclock');
@@ -155,9 +153,34 @@ TweenMax.to("#uur", {rotation:360, transformOrigin:"20px 115px", repeat:-1, ease
 // if ()
 // tl.to("#scaleclock", 1, {scale: 0.5});
 
+// De tijd en datum
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 
-var tl = new TimelineLite();
-tl.to("#maan", 2, {left:"200px", repeat:0, ease:power1.easeInOut})
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  // add a zero in front of numbers<10
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+  t = setTimeout(function() {
+    startTime()
+  }, 500);
+}
+startTime();
 
 
 
