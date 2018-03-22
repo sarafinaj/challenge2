@@ -135,8 +135,8 @@ setDate();
 //var tl = new TimelineMax();
 //tl1.to({cirkelgroot, -1, Background-color})
 
-// var tl = new TimelineMax({repeat:-1});
-// tl.to("#mainbackground", 60,{backgroundPosition: "0px -8192px", ease: Linear.easeNone}); // background met een oneidinge loop
+var tl = new TimelineMax({repeat:-1});
+tl.to("#mainbackground", 60,{backgroundPosition: "0px -8192px", ease: Linear.easeNone}); // background met een oneidinge loop
 
 // var tl = new TimelineMax({repeat:0});
 // tl.to(minuut, 1, {top:200, left:880});

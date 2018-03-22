@@ -222,7 +222,7 @@ body{
 
 	.text:nth-child(1){
 		position: relative;
-		left: 25%;
+		left: 28%;
 		top: 690px;
 	}
 
@@ -454,24 +454,25 @@ body{
 	}
 
 	.text{
-	font-size: 5em;
+	font-size: 6em;
 	}
 
 	.text:nth-child(2){
 		position: relative;
-		left: 37%;
+		left: 43%;
+		top: 80px;
 	}
 
 	.text:nth-child(1){
 		position: relative;
-		left: 38%;
-		top: 680px;
+		left: 45%;
+		top: 960px;
 	}
 
 	/*---KLOK---*/
 	.clock{
-		top: 200px;
-		left: 41%;
+		top: 210px;
+		left: 46%;
 	}
 
 	.clockcirkelgroot{
